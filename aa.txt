@@ -1,0 +1,303 @@
+
+MY-2 = Margen arriba y abajo (eje Y).
+Mx-1 = Margen izquierda y derecha (eje X).
+MB (margen abajo) 
+MS (margen start)
+ME (margen end)
+MT (margen top)
+ML (mover la wea a la izquierda)
+MR (mover la wea a la derecha)
+
+si en el powershell de visual code no inicia hacer esto
+
+-ir a powershell y poner Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine   
+-luego poner S o Y depende del idioma
+
+
+
+https://tailwindcss.com/docs/installation/tailwind-cli (link) 
+
+
+
+
+hacer el npm run dev en el terminal para acortar el npx en el dev del package.json
+
+
+el text 3x1 o 9x1 es para cambiar de escala
+el font es para ver si es mas negrita o mas clara la tipografia 
+
+
+font-thin	100	El más delgado (línea de pelo).
+font-extralight	200	Muy fino.
+font-light	300	Delgado, elegante.
+font-normal	400	El peso por defecto (regular).
+font-medium	500	Un poco más grueso que el normal.
+font-semibold	600	Casi negrita, ideal para subtítulos.
+font-bold	700	Negrita estándar.
+font-extrabold	800	Muy grueso.
+font-black	900	El peso máximo (pesado).
+
+font-[]  te deja poner tipografias que no estan en tailwind
+
+
+bg-[#0E0F0F] los corchetes para customizar el color como con colorzilla
+bg-[#0E0F0F]/50 el / es para hacer la transparencia, y esta de 0 a 100
+
+
+bg-linear-to- (La dirección)
+Es para decirle al color hacia dónde tiene que "correr":
+
+bg-linear: El color viaja en línea recta (como una pared pintada de lado a lado).
+
+
+to-r (Right): De izquierda a derecha. Es el estándar, el que se ve en casi todas las webs.
+
+to-l (Left): De derecha a izquierda.
+
+to-t (Top): De abajo hacia arriba (al techo).
+
+to-b (Bottom): De arriba hacia abajo (al suelo).
+
+to-tr (Top Right): Hacia la esquina superior derecha.
+
+to-tl (Top Left): Hacia la esquina superior izquierda.
+
+to-br (Bottom Right): Hacia la esquina inferior derecha.
+
+to-bl (Bottom Left): Hacia la esquina inferior izquierda.
+
+
+bg-linear-to-r from-indigo-700 to-violet-700"  es una forma de describir un color a otro extremo mientras se van cambiando
+
+
+bg-radial: El color nace desde el centro y se expande como un círculo hacia afuera
+
+bg-radial from-indigo-700 to-violet-700
+
+h = altura
+w = ancho
+
+los h y w son para moldear la pantalla, no el texto
+
+1 unidad de tailwind son 4 px
+
+
+
+
+h-7 seria 4*7 = 28px
+
+h-1/1×4     4px   Espacios mínimos.
+h-4/4×4     16px  El tamaño base de un párrafo (text-base).
+h-10/10×4   40px  Altura típica de un botón o un input.
+h-64/64×4   256px Tamaño de una imagen de tarjeta.
+h-96/96×4   384px El máximo de la escala fija por defecto.
+
+
+
+w-0	0px	Esconder algo.
+w-px	1px	Líneas divisoras finas.
+w-0.5	2px	-
+w-1	4px	Espacios mínimos.
+w-4	16px	Tamaño de un icono chico.
+w-10	40px	Ancho de un botón circular o avatar.
+w-32	128px	Ancho de una imagen de producto pequeña.
+w-64	256px	Tamaño estándar de una Card (tarjeta).
+w-80	320px	Ancho típico de un formulario en celular.
+w-96	384px	El máximo de la escala fija normal.
+w-screen: 100vw. Ocupa el ancho total de la ventana del navegador.
+w-min:           Se achica hasta el tamaño mínimo del texto (para que no se corte una palabra).
+w-max:           Se estira hasta el tamaño máximo del texto en una sola línea.
+w-fit:           Se ajusta justo al contenido que tiene adentro.
+w-full: Ocupa todo el ancho (100%).
+
+w-1/2: Ocupa la mitad (50%).
+
+w-1/3: Ocupa un tercio (33%).
+
+
+
+
+p-: Espacio hacia adentro. Sirve para que el texto no quede pegado a los bordes de la caja.
+
+-Si le das mucho padding, el marco se vuelve gigante y la foto queda chiquitita al centro.
+
+-Sirve para: Que el texto no toque los bordes de su propia caja. Es espacio interior
+
+m-: Espacio hacia afuera. Sirve para separar una caja de otra.
+
+-Si le das más margen, el cuadro se aleja de los demás.
+
+-Sirve para: Que las cajas no estén pegadas unas con otras. Es espacio vacío y exterior.
+
+
+Por defecto, en la web, el Padding suma tamaño a la caja.
+Si le metes un Padding de 20px (p-5), la lógica dice: "Ah, quiero 20px de aire adentro".Pero el navegador entiende: "Súmale 20px a la izquierda y 20px a la derecha".Resultado: Tu caja ahora mide 140px ($100 + 20 + 20$).
+
+
+
+Para cosas que tienen un tamaño físico real: una foto de perfil, un logo, o el alto de una tarjeta (card) que no quieres que se deforme los h-x
+
+
+
+
+h-screen = 100vh
+
+vh significa Viewport Height (Altura de la Ventana Gráfica)
+Es una unidad de medida relativa a la pantalla del dispositivo que estás usando.
+
+1vh = 1% de la altura total de la pantalla.
+100vh = 100% de la altura de la pantalla.
+
+Para la pantalla de carga (splash screen), el fondo de la app o secciones que deben ocupar toda la pantalla del celular de una.
+
+
+
+El <nav> sirve para identificar la sección de enlaces de navegación.   /aqui se mete el color de todo el recuadro porque es el padre
+
+El Hero es la primera sección que ves apenas entras a una página web. Es ese bloque gigante con una imagen o color llamativo, un título grande y un botón que te invita a hacer algo.
+
+<div>	Es una caja genérica. Se usa solo para diseño (poner colores, centrar, usar Flexbox). No significa nada.	Una pieza de metal genérica que usas para arreglar algo.
+
+<section> Es una parte específica del contenido. Se usa para agrupar cosas que tienen un tema (Ej: "Sobre mí", "Galería de fotos", "Contacto").
+
+El footer es el "Pie de Página". Es la última sección que ves en cualquier sitio web, esa franja que está abajo del todo y que generalmente tiene los derechos de autor, el año, o links de contacto. 
+
+
+50 - 300: Colores claros (ideales para fondos de secciones o tarjetas).
+
+400 - 600: Colores medios (ideales para botones o barras de navegación).
+
+700 - 950: Colores oscuros (ideales para texto o fondos nocturnos).
+
+w-3/4 o  w-1/2
+
+min-h-screen
+El gap crea un espacio vacío entre las columnas y las filas sin que tengas que estar peleándote con márgenes individuales.
+
+
+grid-cols-1 lg:grid-cols-3: Es una orden "inteligente".
+
+"Oye, parte en 1 (celular) para que las tarjetas ocupen todo el ancho y se lean bien".
+
+"Pero si detectas que la pantalla es grande (lg), ahí recién sepáralas en 3".
+
+grid-cols-1 lg:grid-cols-3: Es una orden "inteligente".
+
+"Oye, parte en 1 (celular) para que las tarjetas ocupen todo el ancho y se lean bien".
+
+"Pero si detectas que la pantalla es grande (lg), ahí recién sepáralas en 3".
+
+
+Si pones lg:grid-cols-3: Las 3 quedan en una sola fila (lo que pide el profe).
+
+Si pones lg:grid-cols-4: Quedarán las 3 en una fila, pero sobrará un espacio vacío a la derecha (el hueco de la cuarta columna).
+
+
+
+
+Alineación (text-)
+text-left: Alinea a la izquierda (Es el que pide el profe para el Hero y las Cards)
+text-center: Centra el texto (Útil para los botones o si quieres centrar el footer).
+text-right: Alinea a la derecha
+text-justify: Estira el texto para que ocupe todo el ancho.
+
+Tamaño (text-)
+text-xs	   Muy chico (12px)       Notas legales al final.
+text-sm	   Chico (14px)           Párrafos de las cards y descripción del Hero.
+text-base  Normal (16px)	  Texto estándar por defecto.
+text-lg	   Grande (18px)	  Precios o subtítulos destacados.
+text-xl    Extra grande (20px)	  Títulos de las cards de productos.
+text-4xl   Gigante (36px)	  Título principal del Hero ("Los mejores gadgets...").
+
+
+
+
+El Flexbox sirve para repartir el espacio entre los elementos y decirles hacia dónde "mirar". Se divide en dos fuerzas:
+
+flex-row (Viene por defecto): Los elementos se ponen en fila (uno al lado del otro).
+flex-col: Los elementos se ponen en columna (uno abajo del otro).
+
+El Eje Principal (justify-)
+Es la dirección en la que fluyen tus cosas. Si están en una fila (una al lado de otra), el eje principal es horizontal.
+Sirve para empujar los elementos a las esquinas, al centro o separarlos equitativamente a lo largo de esa línea.
+
+
+
+rounded-none: Sin redondeado (esquina en punta).
+
+rounded-sm: Redondeado sutil (2px).
+
+rounded: El estándar (4px).
+
+rounded-md: Un poco más notorio (6px).
+
+rounded-lg: Redondeado grande (8px).
+
+rounded-xl: Muy redondeado (12px).
+
+rounded-2xl: Redondeado extremo (16px).
+
+rounded-3xl: Redondeado máximo (24px).
+
+rounded-full: El que usaste para el círculo (redondea hasta que sea una cápsula o círculo perfecto).
+
+
+
+rounded-t-*: Solo arriba (Top).
+
+rounded-b-*: Solo abajo (Bottom).
+
+rounded-l-*: Solo a la izquierda (Left).
+
+rounded-r-*: Solo a la derecha (Right).
+
+
+rounded-tl-*: Arriba izquierda (Top-Left).
+
+rounded-tr-*: Arriba derecha (Top-Right).
+
+rounded-bl-*: Abajo izquierda (Bottom-Left).
+
+rounded-br-*: Abajo derecha (Bottom-Right).
+
+
+
+justify-: Mueve de izquierda a derecha.
+
+justify-start: Izquierda.
+
+justify-center: Centro.
+
+justify-end: Derecha.
+
+justify-between: Uno a cada punta.
+
+items-: Mueve de arriba a abajo.
+
+items-start: Arriba.
+
+items-center: Al medio (vertical).
+
+items-end: Abajo.
+
+
+
+
+items-: Mueve las cosas hacia los lados de la fila/columna.
+
+items-start (Al inicio)
+Envía todo al inicio. Como estamos en una columna (flex-col), el "inicio" es la izquierda.
+
+2. items-center (Al centro)
+Pone el contenido justo a la mitad de la altura. Es el que usaste para que la sección azul no estuviera pegada al techo.
+
+3. items-end (Al final)
+Empuja el contenido hacia el suelo. Se queda pegado al fondo del contenedor.
+
+4. items-stretch (Estirado)
+Es el que viene por defecto. Obliga al contenido a estirarse desde el techo hasta el suelo para ocupar todo el alto disponible. Por eso, cuando no tenías items-center, tu franja azul se veía gigante de arriba a abajo.
+
+5. items-baseline (A la línea base)
+Este es más técnico. Alinea los elementos según la base del texto que tienen dentro. Se usa cuando tienes dos cajas con letras de distintos tamaños y quieres que las letras queden alineaditas en la misma línea imaginaria, aunque las cajas tengan distinto alto.
+
+
